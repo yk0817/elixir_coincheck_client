@@ -1,18 +1,9 @@
 defmodule ElixirCoincheckClient do
-  @moduledoc """
-  Documentation for ElixirCoincheckClient.
-  """
 
-  @doc """
-  Hello world.
+  defdelegate ticker, to: ElixirCoincheckClient.API.Ticker
 
-  ## Examples
+  defdelegate order_books, to: ElixirCoincheckClient.API.OrderBooks
 
-      iex> ElixirCoincheckClient.hello()
-      :world
+  defdelegate trades, to: ElixirCoincheckClient.API.Trades
 
-  """
-  def hello do
-    :world
-  end
 end
