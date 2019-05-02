@@ -21,9 +21,9 @@ defmodule ElixirCoincheckClient.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:exvcr, "~> 0.10", only: :test },
       {:httpoison, "~> 1.4" },
-      {:poison, "~> 3.1" },
-      {:smallex, "~> 0.2"}
+      {:poison, "~> 3.1" }
     ]
   end
 end

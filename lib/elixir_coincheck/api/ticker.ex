@@ -1,10 +1,8 @@
 defmodule ElixirCoincheckClient.API.Ticker do
   import ElixirCoincheckClient.API.Base
-  # public
+  @spec ticker() :: binary()
   def ticker() do
     url = domain() <> "/ticker"
-    response = HTTPoison.get!(url)
-    inspect response.body
+    HTTPoison.get!(url)
   end
-
 end
