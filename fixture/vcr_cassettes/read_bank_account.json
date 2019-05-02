@@ -1,0 +1,40 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "ACCESS-KEY": "",
+        "ACCESS-NONCE": "",
+        "ACCESS-SIGNATURE": "",
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://coincheck.com/api/bank_accounts"
+    },
+    "response": {
+      "binary": false,
+      "body": "{\"success\":true,\"data\":[{\"id\":127566,\"bank_name\":\"みずほ\",\"branch_name\":\"東京中央\",\"bank_account_type\":\"futsu\",\"number\":\"2187950\",\"name\":\"ヤマモト　ケン\"},{\"id\":378947,\"bank_name\":null,\"branch_name\":null,\"bank_account_type\":null,\"number\":null,\"name\":\"Tanaka Ken\"}]}",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Date": "Thu, 02 May 2019 08:52:37 GMT",
+        "Server": "nginx",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Content-Type-Options": "nosniff",
+        "ETag": "W/\"258c68b13b71f06a34745db0891b6fdf\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "40d47b68-cca6-4aba-98f1-9a9c7f3ce31a",
+        "X-Runtime": "0.021405",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 e4404fd3b1d2ac38d3124fbc6bbedc8b.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "0N6Z23ariqrW_xikLtCvGM_wjWOMNzfCZ9h5KZ-GCldayx_1zRjVQA=="
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
