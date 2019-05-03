@@ -2,6 +2,7 @@
 
 This is elixir client implementation for Coincheck API.
 
+[hex official](https://hex.pm/packages/elixir_coincheck_client)
 [coincheck API page](https://coincheck.com/ja/documents/exchange/api)
 
 ## Installation
