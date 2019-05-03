@@ -1,6 +1,8 @@
 # ElixirCoincheckClient
 
-**TODO: Add description**
+This is elixir client implementation for Coincheck API.
+
+[coincheck API page](https://coincheck.com/ja/documents/exchange/api)
 
 ## Installation
 
@@ -15,7 +17,18 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixir_coincheck_client](https://hexdocs.pm/elixir_coincheck_client).
 
+## usage
+
+```
+$ mix deps.get
+# you need to set System environment variables (COINCHECK_PUBLIC_KEY , COINCHECK_PRIVATE_KEY)
+# [see this](https://github.com/yk0817/elixir_coincheck_client/blob/master/config/config.exs#L4)
+$ iex -S mix
+# get ticker [official usage](https://coincheck.com/ja/documents/exchange/api#ticker)
+$ iex(1)> ElixirCoincheckClient.ticker
+# get trades [official usage](https://coincheck.com/ja/documents/exchange/api#trades)
+$ iex(2)> ElixirCoincheckClient.trades
+# POST usage
+$ iex(3)> ElixirCoincheckClient.exchange_orders(%{ amount: 10, order_type: "market_buy", pair: "btc_jpy" }) 
+```
